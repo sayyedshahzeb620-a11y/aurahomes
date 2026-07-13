@@ -609,3 +609,180 @@ nav{
     }
 
 }
+/* Premium Floating Navbar Upgrade */
+
+.navbar{
+
+    transition:0.5s ease;
+
+}
+
+
+.navbar:hover{
+
+    border-color:rgba(200,164,93,0.6);
+
+    box-shadow:
+    0 0 40px rgba(200,164,93,0.15);
+
+}
+
+
+
+.logo{
+
+    letter-spacing:2px;
+
+    transition:.4s;
+
+}
+
+
+.logo:hover{
+
+    text-shadow:
+    0 0 20px rgba(200,164,93,.8);
+
+}
+
+
+
+/* Luxury Menu Animation */
+
+
+nav a{
+
+    position:relative;
+
+    padding-bottom:8px;
+
+}
+
+
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0%;
+
+    height:1px;
+
+    background:#C8A45D;
+
+    transition:.4s;
+
+}
+
+
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+
+/* Glass Cards Enhancement */
+
+
+.card,
+.product-card,
+.features div,
+.review-card{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+.card::before,
+.product-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:
+    radial-gradient(circle,
+    rgba(200,164,93,.25),
+    transparent 70%);
+
+    top:-80px;
+
+    right:-80px;
+
+    transition:.5s;
+
+}
+
+
+
+.card:hover::before,
+.product-card:hover::before{
+
+    transform:scale(2);
+
+}
+
+
+
+/* Premium Button Glow */
+
+
+button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.4),
+    transparent
+    );
+
+    transition:.6s;
+
+}
+
+
+
+button:hover::before{
+
+    left:100%;
+
+}
