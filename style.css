@@ -500,3 +500,112 @@ nav{
 
 
 }
+/* Luxury Cinematic Hero Upgrade */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    background:radial-gradient(
+        circle,
+        rgba(200,164,93,0.18),
+        transparent 65%
+    );
+
+    top:20%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    filter:blur(40px);
+
+    z-index:-1;
+
+}
+
+
+.hero{
+
+    position:relative;
+
+}
+
+
+
+.hero-content h1{
+
+    animation:luxuryFade 1.5s ease forwards;
+
+}
+
+
+
+.hero-content p{
+
+    animation:luxuryFade 2s ease forwards;
+
+}
+
+
+
+.buttons{
+
+    animation:luxuryFade 2.5s ease forwards;
+
+}
+
+
+
+@keyframes luxuryFade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+/* Premium Image Placeholder */
+
+.image-placeholder{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+
+
+@keyframes floating{
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+}
