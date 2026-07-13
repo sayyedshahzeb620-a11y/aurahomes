@@ -786,3 +786,117 @@ button:hover::before{
     left:100%;
 
 }
+/* Luxury Product Showcase Upgrade */
+
+.products{
+
+    position:relative;
+
+}
+
+
+.product-grid{
+
+    gap:40px;
+
+}
+
+
+
+.product-card{
+
+    min-height:520px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+
+
+.product-image{
+
+    height:300px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #111,
+    #050505
+    );
+
+    border:1px solid rgba(200,164,93,.15);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.product-card h3{
+
+    font-size:30px;
+
+    color:#F8F4EC;
+
+}
+
+
+
+.product-card p{
+
+    color:#C8A45D;
+
+    font-size:18px;
+
+}
+
+
+
+
+.product-card button{
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+
+
+/* Luxury Section Divider */
+
+
+section:not(:first-child)::before{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:1px;
+
+    background:#C8A45D;
+
+    margin:0 auto 80px;
+
+    opacity:.6;
+
+}
+
+
+
+/* Smooth page feel */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
